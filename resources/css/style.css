@@ -16,14 +16,19 @@ body {
   position: relative;
   top: 4rem;
   font-family: sans-serif;
+  color: #333333;
 }
 
 .main-content h1 {
   font-size: 2rem;
+  font-family: Merriweather+Sans;
+  font-weight: 800;
 }
 
 .main-content h2 {
   font-size: 1.75rem;
+  font-family: Merriweather+Sans;
+  font-weight: bold;
 }
 
 .main-content h3 {
@@ -60,13 +65,24 @@ body {
   z-index: 5;
   border-bottom: lightgrey solid 0.5px;
   overflow: hidden;
+  font-family: sans-serif;
 }
 
 .header-left{
   margin-left: 1.5rem;
+  font-size: 1.3rem;
   height: 2rem;
   display: flex;
   align-items: center;
+}
+
+.calmar {
+  font-family: Hind;
+  font-weight: bold;
+}
+
+.academy {
+  font-family: Hind;
 }
 
 .header img{
@@ -87,6 +103,16 @@ body {
 
 .navigation li {
   padding-left: 1rem;
+}
+
+.navigation a {
+  color: #464545;
+  transition-property: border;
+  transition-duration: 100ms;
+}
+
+.navigation a:hover {
+  border-bottom: 1.5px solid grey;
 }
 
 .header.mobile {
@@ -139,8 +165,6 @@ body {
 .first-text {
   display: flex;
   flex-direction: column;
-
-
 }
 
 .first-text #every, #consectetur {
@@ -149,10 +173,16 @@ body {
 
 .button {
 display: flex;
-background-color: black;
+background-color: #464545;
 padding: 0.5rem 0;
 color: white;
 justify-content: center;
+transition-property: background-color;
+transition-duration: 300ms;
+}
+
+.button:hover {
+  background-color: #c71313;
 }
 
 @media only screen and (max-width: 480px) {
@@ -197,10 +227,7 @@ justify-content: center;
   .button {
     background-color: grey;
     display: block;
-
   }
-
-
 
 }
 
@@ -282,9 +309,13 @@ justify-content: center;
 
 #readmore a{
   color: blue;
+  transition-property: border;
+  transition-duration: 50ms;
 }
 
-
+#readmore a:hover{
+  border-bottom: 1px solid blue;
+}
 
 .info-image {
   width: 35%;
@@ -421,6 +452,12 @@ justify-content: center;
 
 .third-mobile{
   display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .box-text h3{
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 480px) {
