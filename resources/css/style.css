@@ -20,7 +20,7 @@ body {
 }
 
 .main-content h1 {
-  font-size: 2rem;
+  font-size: 10rem;
   font-family: Merriweather+Sans;
   font-weight: 800;
 }
@@ -39,18 +39,10 @@ body {
   font-size: 1.2rem
 }
 
-@media only screen and (max-width: 600px) {
-  .main-content h3 {
-    font-size: 1.125rem;
-
-  }
+.main-content p {
+  font-size: 4rem;
 }
 
-@media only screen and (max-width: 480px) {
-  .main-content h3 {
-    font-size: 1.5rem;
-  }
-}
 
 /* Header */
 
@@ -76,12 +68,12 @@ body {
   align-items: center;
 }
 
-.calmar {
+.håll {
   font-family: Hind;
   font-weight: bold;
 }
 
-.academy {
+.alla {
   font-family: Hind;
 }
 
@@ -90,7 +82,7 @@ body {
   width: auto;
 }
 
-.academy{
+.alla{
   color: grey;
 }
 
@@ -106,7 +98,7 @@ body {
 }
 
 .navigation a {
-  color: #464545;
+  color: #474747;
   transition-property: border;
   transition-duration: 100ms;
 }
@@ -115,491 +107,120 @@ body {
   border-bottom: 1.5px solid grey;
 }
 
-.header.mobile {
+
+
+
+.main-content {
+  background-color: antiquewhite;
+  padding-bottom: 11rem;
+}
+
+
+
+
+
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding-top: 5%;
+}
+
+/* Hide the images by default */
+.mySlides {
   display: none;
-}
-
-@media only screen and (max-width: 480px) {
-
-  .header {
-    justify-content: space-around;
-  }
-
-  .header-left, .navigation {
-    display: none;
-  }
-
-  .header.mobile {
-    display: flex;
-  }
-
-  .button {
-    text-align: center;
-    margin-right: 2rem;
-  }
 
 }
 
-/* Learn Something */
-
-.first{
-  display: flex;
-  width: 100%;
-  background-color: lightgrey;
-  align-items: center;
-}
-
-.first-image {
-  padding: 2rem 1.5rem;
-  width: 60vw;
-  overflow: hidden;
-}
-
-.first-image img{
-  display: block;
-  width: 100%;
-  height: auto;
-
-}
-
-.first-text {
-  display: flex;
-  flex-direction: column;
-}
-
-.first-text #every, #consectetur {
-  padding-bottom: 1.5rem;
-}
-
-.button {
-display: flex;
-background-color: #464545;
-padding: 0.5rem 0;
-color: white;
-justify-content: center;
-transition-property: background-color;
-transition-duration: 300ms;
-}
-
-.button:hover {
-  background-color: #c71313;
-}
-
-@media only screen and (max-width: 480px) {
-
-  .first {
-    display: flex;
-    max-width: 100%;
-    flex-direction: column;
-    align-items: flex-start;
-    overflow: hidden;
-  }
-
-  .first-image {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    width: 100%;
-    padding: 0 0 2rem 0;
-  }
-
-  .first-image img {
-    display: block;
-    width: 100%;
-  }
-
-  .first-text {
-    padding: 0 0 2rem 0;
-    margin-left: 1rem;
-    line-height: 1.4;
-    width: 100%;
-  }
-
-  .first-text #every{
-    padding-bottom: 2rem;
-  }
-
-  .first-text:last-child{
-    justify-content: center;
-
-  }
-
-  .button {
-    background-color: grey;
-    display: block;
-  }
-
-}
-
-/* Keep Practising */
-
-.second {
-  display: flex;
-  padding-top: 2rem;
-  border: grey solid 1px;
-  position: relative;
-}
-
-.second-left {
-  display: flex;
-  flex-direction: column;
-  width: 60vw;
-  padding: 0 1.5rem;
-  margin-bottom: 2rem;
-  position: relative;
-}
-
-
-.left-image {
-  width: 60vw;
-  overflow: hidden;
-  padding-bottom: 2rem;
-}
-
-.left-image img {
-  display: block;
-  width: 100%;
-  height: inherit;
-}
-
-.left-text {
-  display: flex;
-  width: 80%;
-  flex-direction: column;
-}
-
-.emanuel {
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
   position: absolute;
-  bottom: 0;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-.left-text #keep, #words {
-  padding-bottom: 2rem;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-.second-right {
-  display: flex;
-  width: 40%;
-  flex-direction: column;
-  margin-bottom: 2rem;
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
 
-.information {
-  display: flex;
-  flex-direction: row;
-  padding: 1rem 0 1rem 1rem;
-  align-items: center;
-  border: lightgrey solid 1px;
-  margin-bottom: 0.5rem;
-  overflow: hidden;
-}
-
-.information.lecture{
-  background-color: lightgrey;
-  margin-bottom: 0;
-}
-
-.info-text span:nth-child(3n+2){
-  margin-top: 0.5rem;
-}
-
-#readmore {
-  margin-top: 0.5rem;
-}
-
-#readmore a{
-  color: blue;
-  transition-property: border;
-  transition-duration: 50ms;
-}
-
-#readmore a:hover{
-  border-bottom: 1px solid blue;
-}
-
-.info-image {
-  width: 35%;
-  overflow: hidden;
-  margin-right: 1rem;
-}
-
-.info-image img{
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 30%;
   width: 100%;
-  display: block;
-}
-
-.info-text {
-  display: flex;
-  flex-direction: column;
-  max-width: 65%;
-}
-
-#second-mobile {
-  display: none;
-}
-
-@media only screen and (max-width: 480px) {
-  .second {
-    padding-top: 1rem;
-    border: none;
-    margin: 0 1rem;
-  }
-
-  .second-left {
-    display: none;
-  }
-
-  .second-right {
-    width: 100%;
-    margin: 0;
-  }
-
-  .information {
-    flex-direction: column;
-    border: none;
-    align-items: flex-start;
-    padding: 0 0 4rem 0;
-  }
-
-  .information .info-text {
-    padding-top: 1.5rem;
-    margin-left: 1rem;
-  }
-
-  div.information.lecture {
-    background-color: white;
-    padding-bottom: 2rem;
-  }
-
-  .info-image {
-    width: 100%;
-    margin-right: 0;
-  }
-
-  #second-desktop{
-    display: none;
-  }
-
-  #second-mobile {
-    display: block;
-  }
-}
-
-/* Start Learning */
-
-.third {
-  display: flex;
-  background-color: lightgrey;
-  padding: 2rem 0;
-  flex-direction: column;
-  text-align: center;
-  line-height: 1.4;
-  max-width: 100%;
-}
-
-
-.third h2 {
-  display: block;
-  padding-bottom: 2rem;
-}
-
-.third .courses {
-  display: block;
-  padding: 0.5rem 0 0.5rem 0;;
-}
-
-.third span{
-  color: grey;
-}
-
-.box-box1, .box-box2 {
-  display: flex;
-  justify-content: center;
-  max-width: 100%;
-  flex-direction: row;
-  text-align: left;
-  margin-left: 5rem;
-  margin-right: 5rem;
-}
-
-.box-box2 {
-  margin-top: 2rem;
-}
-
-.box {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  width: 30%;
-  overflow: hidden;
-
-}
-
-.box.middle{
-  margin: 0 2rem;
-}
-
-.box-text {
-  width: 90%;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.box img{
-  display: block;
-  width: 100%;
-}
-
-.third-mobile{
-  display: none;
-}
-
-@media only screen and (max-width: 600px) {
-  .box-text h3{
-    font-size: 1rem;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-
-  .third {
-    background-color: white;
-  }
-
-  .box-box1, .box-box2 {
-    display: none;
-  }
-
-  .third-mobile {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .third-mobile span {
-    display: block;
-    text-align: left;
-    padding: 1rem 0 1.5rem 1rem;
-    background-color: lightgrey;
-    margin: 0 1rem 0.5rem 1rem;
-
-  }
-}
-
-/* Thesis exhibit */
-
-.fourth {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem 0;
-  border: grey solid 1px;
-  max-width: 100%;
   text-align: center;
 }
 
-.fourth h2{
-  display: block;
-  padding-bottom: 2rem;
+.text a {
+  color: white;
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 
-.fourth-left {
-  display: flex;
-  flex-direction: column;
-  max-width: 60%;
-  padding: 0 1.5rem;
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
-.left-video {
-  margin-bottom: 1.5rem;
+.active, .dot:hover {
+  background-color: #717171;
 }
 
-.left-video video {
-  width: 100%    !important;
-  height: auto   !important;
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
-.left-text {
-  display: flex;
-  text-align: left;
-  flex-direction: column;
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
-.left-text h3 {
-  margin-bottom: 0.5rem;
-}
-
-.left-text p {
-  color: grey;
-}
-
-.fourth-right {
-  width: 40%;
-  text-align: left;
-}
-
-.information2-grey, .information2-white {
-  display: flex;
-  flex-direction: row;
-  padding: 1rem 0 1rem 1rem;
-  align-items: center;
-  margin-bottom: 0.5rem;
-}
-
-.information2-grey{
-  background-color: lightgrey;
-}
-
-.information2-grey .information2-text{
-  width: 60%;
-}
-
-.information2-text h3 {
-  margin-bottom: 0.5rem;
-}
-
-
-.information.lecture{
-  background-color: lightgrey;
-  margin-bottom: 0;
-}
-
-.info-picture {
-  width: 35%;
-  overflow: hidden;
-  padding-right: 1rem;
-}
-
-.info-picture img{
-  width: 100%;
-  display: block;
-}
-
-#mobile-video {
-  display: none;
-}
-
-@media only screen and (max-width: 480px) {
-  .fourth {
-    padding-bottom: 1.5rem;
-    border: none;
-  }
-
-  .container {
-    display: none;
-  }
-
-  #mobile-video {
-    display: block;
-    width: 100%;
-  }
-
-  .fourth h2{
-    padding-bottom: 1rem;
-  }
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 
@@ -607,12 +228,18 @@ transition-duration: 300ms;
 
 .main-content footer {
   width: 100%;
-  height: auto;
+  height: 4rem;
   display: flex;
-  padding-top: 1rem;
+  align-items: center;
+  position: fixed;
+  padding-top: 2rem;
   padding-bottom: 3rem;
-  color: grey;
+  border-top: lightgrey solid 0.5px;
+
+  bottom: 1px;
+  
 }
+
 
 .footer-text {
   width: 100%;
@@ -633,12 +260,4 @@ transition-duration: 300ms;
   padding-left: 1rem;
 }
 
-@media only screen and (max-width: 480px) {
-  .main-content footer {
-    padding-bottom: 1rem;
-  }
 
-  .footer-right {
-    display: none;
-  }
-}
